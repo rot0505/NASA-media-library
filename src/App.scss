@@ -1,0 +1,17 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 50px 50px;
+  min-height: calc(100vh - 140px);
+}
+
+.ant-form-item {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-height: calc(100vh - 120px);
+    padding: 20px;
+  }
+}

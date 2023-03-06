@@ -1,0 +1,76 @@
+.searchPage {
+  .searchForm {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 20px;
+
+    .searchInput,
+    .yearRange {
+      width: 300px;
+    }
+
+    .formActions {
+      display: flex;
+      gap: 5px;
+    }
+  }
+
+  .searchResult {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 1px solid #d9d9d9;
+
+    .searchItem {
+      display: flex;
+      align-self: stretch;
+      width: calc(25% - 15px);
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+
+    h1 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .searchForm {
+      .yearRageContainer {
+        width: 100%;
+      }
+
+      .searchInput,
+      .yearRange {
+        width: 100%;
+      }
+
+      .formActions {
+        width: 100%;
+        flex-direction: column;
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+
+    .searchResult {
+      gap: 10px;
+
+      .searchItem {
+        width: calc(100%);
+      }
+    }
+  }
+}
